@@ -1,0 +1,23 @@
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border: $border;
+    @include border-radius( 15px );
+    text-align: center;
+ 
+    h1 {
+     color: #ca5d3c;
+     font-family: $fontitle;
+     clear: both;
+    }
+
+    .btnStyle {
+        background-color: aqua;
+        color: black;
+        border: 0;
+        @include border-radius( 5px );
+        padding: 10px 10px;
+    }
+}

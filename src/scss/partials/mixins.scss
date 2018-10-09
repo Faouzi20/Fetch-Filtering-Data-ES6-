@@ -1,0 +1,13 @@
+@mixin font-size($fontSize) {
+    -webkit-font-size: $fontSize;
+    -moz-font-size: $fontSize;
+    -ms-font-size: $fontSize;
+    font-size: $fontSize;
+}
+
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}

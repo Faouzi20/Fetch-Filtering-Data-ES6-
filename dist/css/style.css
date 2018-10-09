@@ -1,0 +1,21 @@
+/*--- Font-Family ---*/
+/*--- Color ---*/
+/*--- Border ---*/
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border: 1px solid #efefef;
+  border-radius: 15px;
+  text-align: center; }
+  .container h1 {
+    color: #ca5d3c;
+    font-family: monospace;
+    clear: both; }
+  .container .btnStyle {
+    background-color: aqua;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 10px; }
