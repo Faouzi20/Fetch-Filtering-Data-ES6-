@@ -86,4 +86,29 @@ h1,h2,h3,h4,h5,h6 {
             pointer-events: none;
         }
     }
+
+    .l_footer_top {
+        display: block;
+
+        .pull-top {
+            background-color: #bbbbbb;
+            display: none;
+            position: fixed;
+            right: 45px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 30px;
+            transition: 0.5s;
+        }
+
+        .pull-top:hover {
+            background-color: gray;
+        }
+    }
+
 }
