@@ -2,15 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Fetch&Filtering DATA</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fetch&Filtering DATA</title>
         <link rel="stylesheet" href="dist/css/style.css">
     </head>
 
     <body>
-        <div class="container">
-            <h1>Configuration Webpack</h1>
-            <button class="btnStyle" onclick="MyAlert()">Click Me</button>
+        <div class="l_container">
+
+            <div class="l_header">
+                <div class="form__filter">
+                    <input class="js_input_filter" type="text" placeholder="Search Anything..." >
+                    <button class="js_button_filter">Search</button>
+                </div>
+                <div class="form__options">
+                    <label>
+                        <select class="js-max-result" >
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                        </select>
+                        Maximum Results
+                    </label>
+                    <label>
+                        <input class="js-more-than" type="checkbox">
+                        Show only users with more than 10 likes
+                    </label>
+                </div>
+            </div>
+
+            <div class="l_footer">
+                <a href="#" class="pull-left js-prev-btn" ></a>
+                <a href="#" class="pull-right js-next-btn" ></a>
+            </div>
+
         </div>
     </body>
 
