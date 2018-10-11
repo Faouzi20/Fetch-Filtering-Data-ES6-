@@ -50,6 +50,71 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 
+    .l_mainContent  {
+        background-color: #eaeaea;
+        width: 80%;
+        margin: 20px auto;
+        padding: 15px 0px;
+        @include border-radius( 10px );
+        
+        .card{
+            width: 90%;
+            margin: auto;
+            padding: 20px 15px;
+            border-top: 2px solid gray;
+
+            &:first-child{
+                border-top: 0;
+            }
+
+            &:last-child{
+              border-bottom: 0;
+            }
+
+            &__img{
+              width: 100px;
+              height: auto;
+              float: left;
+              border: 2px solid #dcdcdc;
+            }
+
+            &__content{
+              width: calc(100% - 125px);
+              float: right;
+            }
+
+            &__metadata{
+              margin: 0;
+              padding: 0;
+              li{
+                display: inline;
+                font-size: 15px;
+                margin-right: 20px;
+              }
+            }
+
+            &__title{
+              margin-top: 0;
+              font-family: 'Archivo Narrow', sans-serif;
+              a{
+                text-decoration: none;
+                color: #000000;
+              }
+            }
+
+            i.fas:hover {
+                opacity: 0.4;
+                cursor: pointer;
+            }
+
+            &:after{
+              content: "";
+              display: block;
+              clear: both;
+            }
+        }
+    }
+
     .l_footer {
         width: 80%;
         margin: 20px auto;
@@ -94,7 +159,8 @@ h1,h2,h3,h4,h5,h6 {
             background-color: #bbbbbb;
             display: none;
             position: fixed;
-            right: 45px;
+            bottom: 0px;
+            right: 0px;
             z-index: 99;
             font-size: 16px;
             border: none;
@@ -102,7 +168,7 @@ h1,h2,h3,h4,h5,h6 {
             color: white;
             cursor: pointer;
             padding: 10px;
-            border-radius: 30px;
+            border-radius: 40px;
             transition: 0.5s;
         }
 
