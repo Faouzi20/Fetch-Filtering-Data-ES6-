@@ -39,11 +39,39 @@ function viewData(){
     placeHolder.innerHTML = mapData(data);
 }
 
+function filterData(){
+    let inputfilter = document.querySelector(".js_input_filter").value;
+    let res1;
+    if(inputfilter || inputfilter.trim() != null || inputfilter.trim().length != 0){
+        return res1 = data.filter(item => {
+            return (item.description) ? item.description.includes(inputfilter) : null;
+        });
+    }
+}
+
+function viewDataFiltering(){
+    placeHolder.innerHTML = mapData(filterData());
+}
+
+function maxLikesFiltred(){
+    let res2;
+    return res2 = data.filter(item => {
+        return item.metadata.connections.likes.total > 4000;
+    });
+}
+
+function maxLikesSearch(){
+    let maxLikesChecked = document.querySelector(".js-more-than");
+    return (maxLikesChecked.checked) ? placeHolder.innerHTML = mapData(maxLikesFiltred()) : viewDataFiltering();
+}
+
 
 function __init(){
     viewData();
     topPage();
 }
 window.onscroll = onscroll;
+window.viewDataFiltering = viewDataFiltering;
+window.maxLikesSearch = maxLikesSearch;
 window.topPage = topPage;
 __init();

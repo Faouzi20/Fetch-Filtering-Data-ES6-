@@ -33,13 +33,22 @@ h1,h2,h3,h4,h5,h6 {
                 padding: 10px 5px;
                 @include border-radius( 10px );
                 border: 0;
+                outline: none;
             }
     
             button.js_button_filter {
+                background-color: #639aff;
+                color: white;
                 width: 15%;
                 padding: 10px 0px;
-                @include border-radius( 5px );
                 border: 0;
+                @include border-radius( 5px );
+                outline: none;
+            }
+
+            button.js_button_filter:hover {
+                background-color: white;
+                color: black;
             }
         }
 
@@ -75,7 +84,7 @@ h1,h2,h3,h4,h5,h6 {
               width: 100px;
               height: auto;
               float: left;
-              border: 2px solid #dcdcdc;
+              border: 2px solid #d0d0d0;
             }
 
             &__content{
@@ -98,8 +107,21 @@ h1,h2,h3,h4,h5,h6 {
               font-family: 'Archivo Narrow', sans-serif;
               a{
                 text-decoration: none;
-                color: #000000;
+                color: #639aff;
               }
+            }
+
+            &__description {
+                border-left: 3px solid #639aff;
+                padding-left: 5px;
+            }
+
+            .fas.fa-comment{
+                color: gray;
+            }
+
+            .fas.fa-heart{
+                color: red;
             }
 
             i.fas:hover {
